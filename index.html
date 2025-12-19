@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Sum Number" />
+    <meta name="keywords" content="Sum Number" />
+    <meta name="author" content="dixt viradiya" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TATLE -->
+    <title>Employe Interview Form</title>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/coustm.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    
+</head>
+<!-- BODY -->
+
+<body>
+
+  
+  <div class="container my-4">
+<form id="interviewForm" class="form-box">
+
+    <div class="img">
+    <img src="img/hexa-logo.jpg" alt="" width="170px" height="50px">
+  </div>
+
+<h3 class="text-center fw-bold mb-3">
+  Hexa Plast Employe Interview Form
+</h3>
+
+<!-- Date & Post -->
+<div class="row g-3">
+  <div class="col-md-6">
+    <label>Date</label>
+    <input type="date" name="date" class="form-control">
+  </div>
+  <div class="col-md-6">
+    <label>Post Applied For</label>
+    <input type="text" name="post" class="form-control">
+  </div>
+</div>
+
+<!-- Personal Details -->
+<div class="row g-3 mt-1">
+  <div class="col-md-6">
+    <label>Name</label>
+    <input type="text" name="name" class="form-control" required>
+  </div>
+  <div class="col-md-6">
+    <label>Address</label>
+    <input type="text" name="address" class="form-control" required>
+  </div>
+
+  <div class="col-md-4">
+    <label>City</label>
+    <input type="text" name="city" class="form-control" required>
+  </div>
+  <div class="col-md-4">
+    <label>State</label>
+    <input type="text" name="state" class="form-control" required>
+  </div>
+  <div class="col-md-4">
+    <label>Pin Code</label>
+    <input type="text" name="pincode" class="form-control">
+  </div>
+
+  <div class="col-md-6">
+    <label>Marital Status</label><br>
+    <input type="radio" name="marital_status" value="Single"> Single
+    <input type="radio" name="marital_status" value="Married"> Married
+  </div>
+
+  <div class="col-md-6">
+    <label>Gender</label><br>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+  </div>
+
+  <div class="col-md-4">
+    <label>DOB</label>
+    <input type="date" name="dob" class="form-control" required>
+  </div>
+  <div class="col-md-4">
+    <label>Age</label>
+    <input type="number" name="age" class="form-control" required>
+  </div>
+  <div class="col-md-4">
+    <label>Mobile No</label>
+    <input type="text" name="mobile" class="form-control" required>
+  </div>
+
+  <div class="col-md-6">
+    <label>Email</label>
+    <input type="email" name="email" class="form-control">
+  </div>
+</div>
+
+<!-- Education -->
+<h5 class="fw-bold mt-4">Education Qualification</h5>
+<div class="table-responsive">
+<table class="table table-bordered">
+<tr>
+<th>Passing Year</th><th>College/University</th><th>Degree</th><th>Percentage obtain</th>
+</tr>
+<tr>
+<td><input name="edu1_year"></td>
+<td><input name="edu1_college"></td>
+<td><input name="edu1_degree"></td>
+<td><input name="edu1_percentage"></td>
+</tr>
+<tr>
+<td><input name="edu2_year"></td>
+<td><input name="edu2_college"></td>
+<td><input name="edu2_degree"></td>
+<td><input name="edu2_percentage"></td>
+</tr>
+<tr>
+<td><input name="edu2_year"></td>
+<td><input name="edu2_college"></td>
+<td><input name="edu2_degree"></td>
+<td><input name="edu2_percentage"></td>
+</tr>
+<tr>
+<td><input name="edu2_year"></td>
+<td><input name="edu2_college"></td>
+<td><input name="edu2_degree"></td>
+<td><input name="edu2_percentage"></td>
+</tr>
+</table>
+</div>
+
+<!-- Experience -->
+<h5 class="fw-bold mt-4">Work Experience</h5>
+<div class="table-responsive">
+<table class="table table-bordered">
+<tr>
+<th>Company</th><th>Join Year</th><th>Months/Year Worked</th><th>Designation</th><th>Salary</th><th>Why Left?</th>
+</tr>
+<tr>
+<td><input name="exp1_company"></td>
+<td><input name="exp1_join"></td>
+<td><input name="exp1_years"></td>
+<td><input name="exp1_desig"></td>
+<td><input name="exp1_salary"></td>
+<td><input name="exp1_left"></td>
+</tr>
+<tr>
+<td><input name="exp1_company"></td>
+<td><input name="exp1_join"></td>
+<td><input name="exp1_years"></td>
+<td><input name="exp1_desig"></td>
+<td><input name="exp1_salary"></td>
+<td><input name="exp1_left"></td>
+</tr>
+<tr>
+<td><input name="exp1_company"></td>
+<td><input name="exp1_join"></td>
+<td><input name="exp1_years"></td>
+<td><input name="exp1_desig"></td>
+<td><input name="exp1_salary"></td>
+<td><input name="exp1_left"></td>
+</tr>
+<tr>
+<td><input name="exp1_company"></td>
+<td><input name="exp1_join"></td>
+<td><input name="exp1_years"></td>
+<td><input name="exp1_desig"></td>
+<td><input name="exp1_salary"></td>
+<td><input name="exp1_left"></td>
+</tr>
+</table>
+</div>
+
+<!-- Questions -->
+<h5 class="fw-bold mt-4">Questionnaire</h5>
+
+<div class="mb-2">
+<label>1. Tell something about yourself ?</label>
+<input class="form-control" name="q1">
+</div>
+
+<div class="mb-2">
+<label>2. From when can you join our company ?</label>
+<input class="form-control" name="q2">
+</div>
+
+<div class="mb-2">
+<label>3. What is your present CTC (salary)? / Expected (salary)</label>
+<input class="form-control" name="q3">
+</div>
+
+<div class="mb-2">
+<label>4. Are you on Notice Period?</label>
+<input class="form-control" name="q4">
+</div>
+
+<div class="mb-2">
+<label>5. Which languages you know?</label>
+<input class="form-control" name="q5">
+</div>
+
+<div class="mb-2">
+<label>6. in which field you are expert / interested?</label>
+<input class="form-control" name="q6">
+</div>
+
+<div class="mb-2">
+<label>7. How did you come to know about our comapany?</label>
+<input class="form-control" name="q7">
+</div>
+
+
+
+<h5 class="fw-bold mt-4 text-center">
+Electrical Technical Skill (Yes / No) <br>
+ <label class="form-check-label" for="student_gender" >Required for only Electrician<span class="text-danger">*</span>:-</label>
+</h5>
+
+<div class="row g-3 mt-2">
+
+<div class="col-md-6  skill-box">
+<label>1. Electrical Wiring (ઇલેક્ટ્રિકલ વાયરીંગ)</label><br>
+<input type="radio" name="electrical_wiring" value="Yes" > Yes
+<input type="radio" name="electrical_wiring" value="No"> No
+</div>
+
+<div class="col-md-6 skill-box">
+<label>2. Wiring Diagram Reading (વાયરિંગ ડાયાગ્રામ)</label><br>
+<input type="radio" name="diagram_reading" value="Yes" > Yes
+<input type="radio" name="diagram_reading" value="No"> No
+</div>
+
+<div class="col-md-6 skill-box">
+<label>3. Multimeter Handling (મલ્ટીમીટર)</label><br>
+<input type="radio" name="multimeter" value="Yes" > Yes
+<input type="radio" name="multimeter" value="No"> No
+</div>
+
+<div class="col-md-6 skill-box">
+<label>4. Power Wiring (પાવર વાયરીંગ)</label><br>
+<input type="radio" name="power_wiring" value="Yes" > Yes
+<input type="radio" name="power_wiring" value="No"> No
+</div>
+
+<div class="col-md-6 skill-box">
+<label>5. Control Wiring (કંટ્રોલ વાયરીંગ)</label><br>
+<input type="radio" name="control_wiring" value="Yes"> Yes
+<input type="radio" name="control_wiring" value="No"> No
+</div>
+
+<div class="col-md-6 skill-box">
+<label>6. Sensors Knowledge (સેન્સર જ્ઞાન)</label><br>
+<input type="radio" name="sensors" value="Yes"> Yes
+<input type="radio" name="sensors" value="No"> No
+</div>
+
+<div class="col-md-6 skill-box">
+<label>7. PLC Wiring (PLC વાયરીંગ)</label><br>
+<input type="radio" name="plc_wiring" value="Yes"> Yes
+<input type="radio" name="plc_wiring" value="No"> No
+</div>
+
+<div class="col-md-6 skill-box">
+<label>8. Controller Data Feeding</label><br>
+<input type="radio" name="controller_data" value="Yes"> Yes
+<input type="radio" name="controller_data" value="No"> No
+</div>
+
+<div class="col-md-6 skill-box">
+<label>9. Drive Parameter Setting</label><br>
+<input type="radio" name="drive_setting" value="Yes"> Yes
+<input type="radio" name="drive_setting" value="No"> No
+</div>
+
+</div>
+
+<!-- Submit -->
+<div class="text-center mt-4">
+<button class="btn btn-success px-5">Submit Form</button>
+</div>
+
+<p id="msg" class="text-center fw-bold mt-2"></p>
+
+</form>
+</div>
+<!-- CUSTOM js -->
+<script src="js/all.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/iziToast.min.js"></script>
+<script src="js/sweetalert2@11.js"></script>
+<script src="server/server.js"></script>
+<script src="js/coustm.js"></script>
+</body>
+</html>
